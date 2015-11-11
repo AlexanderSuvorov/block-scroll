@@ -21,16 +21,23 @@ html, body{
 		list-style: none;
 		li{
 			display: inline-block;
-			width: 10px;
-			height: 10px;
+			
 			margin: 5px 0;
 			border-radius: 50%;
 			background-color: @col-1;
+			cursor: pointer;
 			&.current{
-				width: 11px;
-				height: 11px;
 				background-color: transparent;
 				border: 2px solid @col-1;
+				a{
+					width: 11px;
+					height: 11px;
+					cursor: default;
+				}
+			}
+			a{	display: block;
+				width: 10px;
+				height: 10px;
 			}
 		}
 	}
