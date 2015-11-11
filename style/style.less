@@ -1,4 +1,4 @@
-@col-1: #272822;
+@col-1: #4C4C4C;
 
 *{
 	margin: 0;
@@ -8,6 +8,32 @@
 html, body{
 	min-height: 100%;
 	height: 100%;
+}
+
+.section-nav{
+	position: fixed;
+	top: 40%;
+	right: 1%;
+	z-index: 10000;
+	ul{
+		width: 20px;
+		text-align: center;
+		list-style: none;
+		li{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 5px 0;
+			border-radius: 50%;
+			background-color: @col-1;
+			&.current{
+				width: 11px;
+				height: 11px;
+				background-color: transparent;
+				border: 2px solid @col-1;
+			}
+		}
+	}
 }
 
 .section{
@@ -64,3 +90,4 @@ html, body{
 .section.fifth{
 
 }
+
